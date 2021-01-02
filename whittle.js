@@ -1,5 +1,7 @@
-module.exports = function (comparator, whittle) {
+module.exports = function (comparator, ...vargs) {
+    const whittleLeft = vargs.shift()
+    const whittleRight = vargs.shift() || whittleLeft
     return function (left, right) {
-        return comparator(whittle(left), whittle(right))
+        return comparator(whittleLeft(left), whittleRight(right))
     }
 }
