@@ -1,6 +1,6 @@
 {
     "name":                 "whittle",
-    "version":              "0.0.3",
+    "version":              "0.0.4",
     "description":
 
       "A comparator decorator that extracts values for comparison.",
